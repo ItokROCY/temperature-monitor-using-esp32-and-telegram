@@ -4,6 +4,22 @@
 
 This program allows you to monitor room temperature using a DHT22 sensor and send temperature reports via Telegram bot. It also controls red and green LEDs to indicate program status.
 
+**Table of Contents**
+- [Temperature Monitor Using ESP32 and DHT22. Connected to Telegram Bot](#temperature-monitor-using-esp32-and-dht22-connected-to-telegram-bot)
+  - [**Description:**](#description)
+  - [**Installation:**](#installation)
+  - [**Libraries Used:**](#libraries-used)
+  - [**Explanation:**](#explanation)
+    - [**Circuit:**](#circuit)
+    - [**Diagram:**](#diagram)
+    - [**Functions:**](#functions)
+    - [**Example Use Cases:**](#example-use-cases)
+  - [**Flowchart**](#flowchart)
+  - [**FAQ:**](#faq)
+  - [Future Update \& Bug Fix](#future-update--bug-fix)
+  - [**License:**](#license)
+
+
 ## **Installation:**
 
 1. Install Arduino IDE.
@@ -31,6 +47,10 @@ This program allows you to monitor room temperature using a DHT22 sensor and sen
 - Red LED is connected to pin GPIO 26 of ESP32.
 - Green LED is connected to pin GPIO 25 of ESP32.
 
+### **Diagram:**
+<p align="center"><img src="img/wire-diagram.jpeg" alt="wire diagram" height="250"/>
+</p>
+
 ### **Functions:**
 
 - **Monitor Temperature:**
@@ -45,12 +65,15 @@ This program allows you to monitor room temperature using a DHT22 sensor and sen
     - Blinks twice short: Message sent to Telegram.
     - Blinks three times short: Message failed to send.
   - **Green LED:**
-    - Blinks every 5 seconds: Indicates program is active.
+    - Blinks every 2 seconds: Indicates module is active and online.
 
 ### **Example Use Cases:**
 
 - **Monitor room temperature remotely via Telegram bot.**
 - **Get notifications when room temperature exceeds or falls below certain limits.**
+
+## **Flowchart**
+  Coming soon
 
 ## **FAQ:**
 
@@ -70,12 +93,16 @@ A: The program currently uses red and green LEDs. To change the colors, you woul
 
 This program is a useful tool for monitoring room temperature using ESP32 and send report to telegram. LED is additional in this module. You can just only run it with ESP32 and DHT22 sensor only. LED just for signal if IoT module is works/no.
 
-## Future Update
+## Future Update & Bug Fix
 
-- [ ] **Add temperature limits for notifications.**
-- [ ] **Add two-ways interaction in telegram.**
-- [ ] **Refactoring Code.**
+- [ ] **Add temperature limits warning notifications**
+- [ ] **Add two-ways interaction in telegram**
+- [ ] **Refactoring Code**
+- [ ] **Add response when sensor is fail to read**
+- [x] **Fix green LED behavior**
+- [x] **Add wiring diagram**
+- [x] **Add Wokwi Diagram**
 
 ## **License:**
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the [LICENSE.md](LICENSE.md) file for details.
