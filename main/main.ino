@@ -27,7 +27,7 @@
 // For LED testing purposes, use 10 seconds (10000 ms)
 
 unsigned long previousMillisLED2 = 0; // variable to store previous time for LED_PIN_2
-const long intervalLED2 = 2250; // interval time for LED_PIN_2 to blink (2250 ms)
+const long intervalLED2 = 2000; // interval time for LED_PIN_2 to blink (2250 ms)
 
 unsigned long previousMillisDHT = 0; // variable to store previous time for temperature monitoring
 WiFiClientSecure client;

@@ -11,7 +11,7 @@ This program allows you to monitor room temperature using a DHT22 sensor and sen
   - [**Libraries Used:**](#libraries-used)
   - [**Explanation:**](#explanation)
     - [**Circuit:**](#circuit)
-    - [**Diagram:**](#diagram)
+    - [**Diagram \& photo:**](#diagram--photo)
     - [**Functions:**](#functions)
     - [**Example Use Cases:**](#example-use-cases)
   - [**Flowchart**](#flowchart)
@@ -47,9 +47,14 @@ This program allows you to monitor room temperature using a DHT22 sensor and sen
 - Red LED is connected to pin GPIO 26 of ESP32.
 - Green LED is connected to pin GPIO 25 of ESP32.
 
-### **Diagram:**
+### **Diagram & photo:**
 <p align="center"><img src="img/wire-diagram.jpeg" alt="wire diagram" height="250"/>
 </p>
+
+
+<p align="center"><img src="img/rangkaian.jpg" alt="wire diagram" height="250"/>
+</p>
+
 
 ### **Functions:**
 
@@ -97,7 +102,7 @@ This program is a useful tool for monitoring room temperature using ESP32 and se
 
 - [ ] **Add temperature limits warning notifications**
 - [ ] **Add two-ways interaction in telegram**
-- [ ] **Refactoring Code**
+- [x] **Refactoring Code**
 - [ ] **Add response when sensor is fail to read**
 - [x] **Fix green LED behavior**
 - [x] **Add wiring diagram**
